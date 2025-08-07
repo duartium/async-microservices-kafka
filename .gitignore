@@ -25,10 +25,6 @@ Thumbs.db
 # Logs
 *.log
 
-# Docker
-**/Dockerfile*
-**/docker-compose*
-docker-compose*
 .env
 
 # Node modules (if any frontend)
