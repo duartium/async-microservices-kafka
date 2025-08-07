@@ -1,0 +1,68 @@
+# Build results
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio
+.vs/
+.vscode/
+*.code-workspace
+
+# Rider
+.idea/
+*.sln.iml
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Docker
+**/Dockerfile*
+**/docker-compose*
+docker-compose*
+.env
+
+# Node modules (if any frontend)
+node_modules/
+npm-debug.log
+
+# Kafka/Confluent generated files (if any)
+*.avro
+
+# Test results
+TestResults/
+*.coverage
+*.coveragexml
+
+# Others
+*.dbmdl
+*.jfm
+*.pdb
+
+# Ignore secrets and config overrides
+secrets.dev.yaml
+values.dev.yaml
+azds.yaml
+
+# Ignore local configuration
+*.local.json
+
+# Ignore package manager files
+packages/
+.nuget/
+
+# Ignore by convention
+LICENSE
+README.md
+
+# Git itself
+.git/

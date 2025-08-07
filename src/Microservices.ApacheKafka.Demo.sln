@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35617.110 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microservices.ApacheKafka.Shared", "Microservices.ApacheKafka.Shared\Microservices.ApacheKafka.Shared.csproj", "{FD2E01D2-5C53-45EF-8A78-3C46AE68FD14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microservices.ApacheKafka.ProductAPI", "Microservices.ApacheKafka.ProductAPI\Microservices.ApacheKafka.ProductAPI.csproj", "{D8943E05-7F57-4FB1-AF4A-FCDA19F4C879}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microservices.ApacheKafka.OrderAPI", "Microservices.ApacheKafka.OrderAPI\Microservices.ApacheKafka.OrderAPI.csproj", "{B3A7A425-A52A-46F1-9292-8B75F05EE9E0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD2E01D2-5C53-45EF-8A78-3C46AE68FD14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD2E01D2-5C53-45EF-8A78-3C46AE68FD14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD2E01D2-5C53-45EF-8A78-3C46AE68FD14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD2E01D2-5C53-45EF-8A78-3C46AE68FD14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8943E05-7F57-4FB1-AF4A-FCDA19F4C879}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8943E05-7F57-4FB1-AF4A-FCDA19F4C879}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8943E05-7F57-4FB1-AF4A-FCDA19F4C879}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8943E05-7F57-4FB1-AF4A-FCDA19F4C879}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3A7A425-A52A-46F1-9292-8B75F05EE9E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3A7A425-A52A-46F1-9292-8B75F05EE9E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3A7A425-A52A-46F1-9292-8B75F05EE9E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3A7A425-A52A-46F1-9292-8B75F05EE9E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F8745C6-0DB7-44D0-809F-0842E525EE1E}
+	EndGlobalSection
+EndGlobal
