@@ -1,3 +1,6 @@
+using Confluent.Kafka;
+using Microservices.ApacheKafka.ProductAPI.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -7,6 +10,17 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+var config = new ProducerConfig
+{
+    BootstrapServers = "localhost:9092",
+    Acks = Acks.All,
+    EnableIdempotence = true,
+    MessageTimeoutMs = 10000,
+};
+builder.Services.AddSingleton(
+    new ProducerBuilder<Null, string>(config).Build());
+
+builder.Services.AddScoped<IProductService, ProductService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

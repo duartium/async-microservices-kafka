@@ -1,3 +1,5 @@
+using Confluent.Kafka;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +8,14 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+var config = new ConsumerConfig
+{
+    GroupId = "add-product-consumer-group",
+    BootstrapServers = "localhost:9092",
+    AutoOffsetReset = AutoOffsetReset.Earliest,
+};
+builder.Services.AddSingleton(x =>
+    new ConsumerBuilder<Null, string>(config).Build());
 
 var app = builder.Build();
 
